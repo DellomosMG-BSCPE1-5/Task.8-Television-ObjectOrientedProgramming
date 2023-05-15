@@ -4,8 +4,8 @@ class Tv:
     #create a parameterized constructor
     def __init__(self):
         #attributes of the TV
-        self.channel = int(input("Enter your desired channel: "))
-        self.volume_level = int(input("Enter your desired volume level: "))
+        self.channel = int(input("Enter your desired channel (1-120 only): "))
+        self.volume_level = int(input("Enter your desired volume level (1-7 only): "))
         self.on = "ON"
 
     #methods
@@ -44,10 +44,3 @@ class Tv:
     def volume_down(self):
         volume_down = self.volume_level - 1
         print ("Channel: " + str(volume_down))
-
-
-
-
-
-        
-
