@@ -1,3 +1,4 @@
+
 #create the class
 class Tv:
     #create a parameterized constructor
@@ -5,18 +6,16 @@ class Tv:
         #attributes of the TV
         self.channel = int(input("Enter your desired channel: "))
         self.volume_level = int(input("Enter your desired volume level: "))
-        self.on = "On"
+        self.on = "ON"
 
     #methods
-    def tv(self):
-        self.television = (input("Create your own television. Type 'tv' and the number you want. Example: 'tv1':  "))
-        return(self.television)
-    
     def turn_on(self):
-        self.on = True
+        if self.on == "ON":
+            print ("Turn On the TV")
 
     def turn_off(self):
-        self.on = False
+        if self.on != "ON":
+            print ("Turn Off the TV")
     
     def get_channel(self):
         return(self.channel)
