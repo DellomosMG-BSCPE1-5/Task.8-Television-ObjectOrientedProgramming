@@ -1,23 +1,23 @@
 #create the class
 class Tv:
     #create a parameterized constructor
-    def __init__(self,channel,volume_level, on_off):
+    def __init__(self):
         #attributes of the TV
-        self.channel = channel
-        self.volume_level = volume_level
-        self.on_off = on_off
+        self.channel = int(input("Enter your desired channel: "))
+        self.volume_level = int(input("Enter your desired volume level: "))
+ 
+
 
     #methods
     def tv(self):
-        print()
+        self.tv_number = int(input("What is the number of your Tv? Enter the number that corresponds to your Tv: "))
+        return(self.tv_number)
     
     def turn_on(self):
         self.on_off = True
-        print("Turn on this TV.")
-    
+
     def turn_off(self):
         self.on_off = False
-        print("Turn off this TV.")
     
     def get_channel(self):
         channel = int(input("Enter your desired channel: "))
@@ -29,10 +29,11 @@ class Tv:
     def get_volume(self):
         volume_level = int(input("Enter your desired volume level: "))
         self.volume_level = volume_level
-
-    def set_channel(self,volume_level):
-        print("Your desired channel is" + str(volume_level))
-
+        return(self.volume_level)
+    
+    def set_volume(self):
+        return(self.volume_level)
+    
     def channel_up(self):
         channel_up = self.channel + 1
         print (channel_up)
