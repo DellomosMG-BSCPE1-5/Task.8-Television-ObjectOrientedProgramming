@@ -9,7 +9,7 @@ class Tv:
 
     #methods
     def tv(self):
-        self.television = (input("Create your own television. Type 'tv', underscore(_), and the number you want. Example: 'tv_1':  "))
+        self.television = (input("Create your own television. Type 'tv' and the number you want. Example: 'tv1':  "))
         return(self.television)
     
     def turn_on(self):
