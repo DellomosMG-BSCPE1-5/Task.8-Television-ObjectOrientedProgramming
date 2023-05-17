@@ -2,9 +2,9 @@
 #create the class
 class Tv:
     #create a parameterized constructor
-    def __init__(self, channel = "", volume_level = ""):
+    def __init__(self, on = "ON", channel = "", volume_level = ""):
         #attributes of the TV
-        self.on = "ON"
+        self.on = on
         self.channel = channel
         self.volume_level = volume_level
 
